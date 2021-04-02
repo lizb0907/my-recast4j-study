@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/detour" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/detour-extras" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/detour-extras/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/detour/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/detourcrowd" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/detourcrowd/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/detourtilecache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/detourtilecache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/recast" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/recast/src/main/java" charset="UTF-8" />
+  </component>
+</project>

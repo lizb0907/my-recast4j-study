@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/detour/detour.iml" filepath="$PROJECT_DIR$/detour/detour.iml" />
+      <module fileurl="file://$PROJECT_DIR$/detourcrowd/detour-crowd.iml" filepath="$PROJECT_DIR$/detourcrowd/detour-crowd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/detour-extras/detour-extras.iml" filepath="$PROJECT_DIR$/detour-extras/detour-extras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/detourtilecache/detour-tile-cache.iml" filepath="$PROJECT_DIR$/detourtilecache/detour-tile-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parent.iml" filepath="$PROJECT_DIR$/parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recast/recast.iml" filepath="$PROJECT_DIR$/recast/recast.iml" />
+    </modules>
+  </component>
+</project>
