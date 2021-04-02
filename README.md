@@ -1,6 +1,3 @@
-Recast4j
-========
-
 [![Build Status](https://travis-ci.org/ppiastucki/recast4j.svg?branch=master)](https://travis-ci.org/ppiastucki/recast4j)
 
 Java Port of Recast and Detour navigation mesh toolset.
@@ -9,7 +6,7 @@ Java Port of Recast and Detour navigation mesh toolset.
 
 ## Recast4j
 
-recast4j源码学习
+源码学习
 
 链接：https://github.com/ppiastucki/recast4j
 
