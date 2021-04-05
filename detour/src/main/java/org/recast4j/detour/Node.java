@@ -44,7 +44,11 @@ public class Node {
      */
     float total;
 
-    /** Index to parent node. */
+    /**
+     * Index to parent node
+     *
+     * 父亲节点索引
+     */
     public int pidx;
 
     /**
@@ -61,7 +65,11 @@ public class Node {
      */
     int flags;
 
-    /** Polygon ref the node corresponds to. */
+    /**
+     * Polygon ref the node corresponds to.
+     *
+     * 节点对应的多边形索引
+     */
     long id;
 
     public Node(int index) {

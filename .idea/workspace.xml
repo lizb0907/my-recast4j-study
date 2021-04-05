@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0b2308b7-27bd-4f2b-b915-edb8f402312b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/Link.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/MeshTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/MeshTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/NavMesh.java" beforeDir="false" afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/NavMesh.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/NavMeshQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/NavMeshQuery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/OffMeshConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/OffMeshConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/Poly.java" beforeDir="false" afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/Poly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/QueryFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/QueryFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/Link.class" beforeDir="false" afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/Link.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshQuery$PortalResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshQuery$PortalResult.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshQuery$SegInterval.class" beforeDir="false" afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshQuery$SegInterval.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshQuery.class" afterDir="false" />
@@ -122,7 +117,7 @@
       <workItem from="1617196463444" duration="16596000" />
       <workItem from="1617283088139" duration="1647000" />
       <workItem from="1617584424053" duration="1001000" />
-      <workItem from="1617585443933" duration="8934000" />
+      <workItem from="1617585443933" duration="17524000" />
     </task>
     <task id="LOCAL-00001" summary="recast4j-study">
       <created>1617330572312</created>
@@ -146,54 +141,55 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="533" y="115" key="CommitChangelistDialog2/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617330652331" />
-    <state width="449" height="466" key="DebuggerActiveHint" timestamp="1617109198878">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="477" height="462" key="DebuggerActiveHint" timestamp="1617637841140">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="477" height="462" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1617637841140" />
     <state width="449" height="466" key="DebuggerActiveHint/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617109198878" />
-    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1617584494746">
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1617632686556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617584494746" />
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617632686556" />
     <state x="740" y="280" key="FileChooserDialogImpl/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617330333746" />
-    <state width="1860" height="344" key="GridCell.Tab.0.bottom" timestamp="1617588560092">
+    <state width="1860" height="344" key="GridCell.Tab.0.bottom" timestamp="1617637844820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="344" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617588560092" />
+    <state width="1860" height="344" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617637844820" />
     <state width="1877" height="351" key="GridCell.Tab.0.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617283324899" />
-    <state width="1860" height="344" key="GridCell.Tab.0.center" timestamp="1617588560092">
+    <state width="1860" height="344" key="GridCell.Tab.0.center" timestamp="1617637844820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="344" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617588560092" />
+    <state width="1860" height="344" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617637844820" />
     <state width="1877" height="351" key="GridCell.Tab.0.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617283324899" />
-    <state width="1860" height="344" key="GridCell.Tab.0.left" timestamp="1617588560092">
+    <state width="1860" height="344" key="GridCell.Tab.0.left" timestamp="1617637844820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="344" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617588560092" />
+    <state width="1860" height="344" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617637844820" />
     <state width="1877" height="351" key="GridCell.Tab.0.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617283324898" />
-    <state width="1860" height="344" key="GridCell.Tab.0.right" timestamp="1617588560092">
+    <state width="1860" height="344" key="GridCell.Tab.0.right" timestamp="1617637844820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="344" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617588560092" />
+    <state width="1860" height="344" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617637844820" />
     <state width="1877" height="351" key="GridCell.Tab.0.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617283324899" />
-    <state width="1860" height="344" key="GridCell.Tab.1.bottom" timestamp="1617588560092">
+    <state width="1860" height="344" key="GridCell.Tab.1.bottom" timestamp="1617637844820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617588560092" />
+    <state width="1860" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617637844820" />
     <state width="1877" height="351" key="GridCell.Tab.1.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617283324899" />
-    <state width="1860" height="344" key="GridCell.Tab.1.center" timestamp="1617588560092">
+    <state width="1860" height="344" key="GridCell.Tab.1.center" timestamp="1617637844820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="344" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617588560092" />
+    <state width="1860" height="344" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617637844820" />
     <state width="1877" height="351" key="GridCell.Tab.1.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617283324899" />
-    <state width="1860" height="344" key="GridCell.Tab.1.left" timestamp="1617588560092">
+    <state width="1860" height="344" key="GridCell.Tab.1.left" timestamp="1617637844820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="344" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617588560092" />
+    <state width="1860" height="344" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617637844820" />
     <state width="1877" height="351" key="GridCell.Tab.1.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617283324899" />
-    <state width="1860" height="344" key="GridCell.Tab.1.right" timestamp="1617588560092">
+    <state width="1860" height="344" key="GridCell.Tab.1.right" timestamp="1617637844820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="344" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617588560092" />
+    <state width="1860" height="344" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617637844820" />
     <state width="1877" height="351" key="GridCell.Tab.1.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617283324899" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1617585428923">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -212,6 +208,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617585447530" />
+    <state x="616" y="242" key="run.anything.popup" timestamp="1617637522030">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="242" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617637522030" />
     <state x="623" y="225" width="672" height="672" key="search.everywhere.popup" timestamp="1617611150211">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -219,6 +219,15 @@
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617265016977" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/AbstractDetourTest.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="startRefs.length" />

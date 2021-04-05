@@ -57,7 +57,11 @@ public class NavMesh {
     /// both directions. (Is bidirectional.)
     public static final int DT_OFFMESH_CON_BIDIR = 1;
 
-    /// The maximum number of user defined area ids.
+    /**
+     * The maximum number of user defined area ids
+     *
+     * 用户定义区域id最大数量
+     */
     public static final int DT_MAX_AREAS = 64;
 
     /// Limit raycasting during any angle pahfinding

@@ -698,8 +698,10 @@ public class NavMeshQuery {
      *            The reference id of the end polygon.
      * @param startPos
      *            A position within the start polygon. [(x, y, z)]
+     *            起始多边形的位置坐标
      * @param endPos
      *            A position within the end polygon. [(x, y, z)]
+     *            终止多边形的位置坐标
      * @param filter
      *            The polygon filter to apply to the query.
      * @return Found path
@@ -801,7 +803,9 @@ public class NavMeshQuery {
 
                 // deal explicitly with crossing tile boundaries
                 int crossSide = 0;
+                //如果是边界链接
                 if (bestTile.links.get(i).side != 0xff) {
+                    //side >> 1 (相当于除以2)
                     crossSide = bestTile.links.get(i).side >> 1;
                 }
 
@@ -851,22 +855,24 @@ public class NavMeshQuery {
                 }
 
                 // Add or update the node.
-                neighbourNode.pidx = m_nodePool.getNodeIdx(bestNode);
+                neighbourNode.pidx = m_nodePool.getNodeIdx(bestNode);   //设置父亲节点
                 neighbourNode.id = neighbourRef;
-                neighbourNode.flags = (neighbourNode.flags & ~Node.DT_NODE_CLOSED);
-                neighbourNode.cost = cost;
-                neighbourNode.total = total;
+                neighbourNode.flags = (neighbourNode.flags & ~Node.DT_NODE_CLOSED); //设置node状态
+                neighbourNode.cost = cost; //g值
+                neighbourNode.total = total; //总的花费代价(f值)
 
                 if ((neighbourNode.flags & Node.DT_NODE_OPEN) != 0) {
                     // Already in open, update node location.
-                    m_openList.modify(neighbourNode);
+                    //todo 有疑问A*算法应该是根据g值是变好才更新开放列表，这里直接更新?
+                    m_openList.modify(neighbourNode);  //已经在开放列表里，重新更新节点位置, 优先队列先移除再添加重新排序
                 } else {
                     // Put the node in open list.
                     neighbourNode.flags |= Node.DT_NODE_OPEN;
-                    m_openList.push(neighbourNode);
+                    m_openList.push(neighbourNode);    //添加到开放列表
                 }
 
                 // Update nearest node to target so far.
+                // 将最近的节点更新为目标
                 if (heuristic < lastBestNodeCost) {
                     lastBestNodeCost = heuristic;
                     lastBestNode = neighbourNode;
