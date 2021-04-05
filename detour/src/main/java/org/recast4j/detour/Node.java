@@ -49,6 +49,8 @@ public class Node {
 
     /**
      * extra state information. A polyRef can have multiple nodes with different extra info. see DT_MAX_STATES_PER_NODE
+     *
+     * 额外状态信息。一个poly引用可以具有多个具有不同附加信息的节点
      */
     int state;
 

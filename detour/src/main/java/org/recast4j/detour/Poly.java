@@ -47,7 +47,7 @@ public class Poly {
     /**
      * Index to first link in linked list. (Or #DT_NULL_LINK if there is no link.)
      *
-     * 连接链表中第一个索引
+     * 连接链表中第一个索引（对应MeshTile:links索引）
      */
     public int firstLink;
 

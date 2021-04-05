@@ -56,7 +56,7 @@ public class MeshTile {
     /**
      * The tile links
      *
-     * 链接
+     * tile的链接列表
      */
     public final List<Link> links = new ArrayList<>();
 

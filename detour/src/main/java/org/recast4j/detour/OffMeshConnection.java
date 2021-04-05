@@ -21,6 +21,10 @@ package org.recast4j.detour;
 /**
  * Defines an navigation mesh off-mesh connection within a dtMeshTile object. An off-mesh connection is a user defined
  * traversable connection made up to two vertices.
+ *
+ * 某些情况下，有特殊的行走路线不是基于几何的表面，例如：从高处的栏杆往低处跳。
+ *
+ * off-mesh connection非网格连接可以用来表示这些路径
  */
 public class OffMeshConnection {
     /** The endpoints of the connection. [(ax, ay, az, bx, by, bz)] */

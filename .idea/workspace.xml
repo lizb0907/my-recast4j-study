@@ -2,507 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b2308b7-27bd-4f2b-b915-edb8f402312b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jpountz_lz4_lz4_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/License.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/detour-extras.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/main/java/org/recast4j/detour/extras/ObjExporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/main/java/org/recast4j/detour/extras/PolyUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/main/java/org/recast4j/detour/extras/Vector3f.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/main/java/org/recast4j/detour/extras/unity/astar/BVTreeBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/main/java/org/recast4j/detour/extras/unity/astar/BinaryReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/main/java/org/recast4j/detour/extras/unity/astar/GraphConnectionReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/main/java/org/recast4j/detour/extras/unity/astar/GraphMeshData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/main/java/org/recast4j/detour/extras/unity/astar/GraphMeshDataReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/main/java/org/recast4j/detour/extras/unity/astar/GraphMeta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/main/java/org/recast4j/detour/extras/unity/astar/GraphMetaReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/main/java/org/recast4j/detour/extras/unity/astar/LinkBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/main/java/org/recast4j/detour/extras/unity/astar/Meta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/main/java/org/recast4j/detour/extras/unity/astar/MetaReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/main/java/org/recast4j/detour/extras/unity/astar/NodeIndexReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/main/java/org/recast4j/detour/extras/unity/astar/NodeLink2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/main/java/org/recast4j/detour/extras/unity/astar/NodeLink2Reader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/main/java/org/recast4j/detour/extras/unity/astar/OffMeshLinkCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/main/java/org/recast4j/detour/extras/unity/astar/UnityAStarPathfindingImporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/test/java/org/recast4j/detour/extras/unity/astar/UnityAStarPathfindingImporterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/test/resources/graph.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/test/resources/graph_v4_1_16.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour-extras/src/test/resources/test_boundstree.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/detour.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/BVNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/ClosestPointOnPolyResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/DefaultQueryFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/DetourBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/DetourCommon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/FindDistanceToWallResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/FindLocalNeighbourhoodResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/FindNearestPolyResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/FindPolysAroundResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/FindRandomPointResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/GetPolyWallSegmentsResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/Link.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/MeshData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/MeshHeader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/MeshTile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/MoveAlongSurfaceResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/NavMesh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/NavMeshBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/NavMeshDataCreateParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/NavMeshParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/NavMeshQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/NodePool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/NodeQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/OffMeshConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/Poly.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/PolyDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/QueryData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/QueryFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/RaycastHit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/StraightPathItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/Tupple2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/Tupple3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/VectorPtr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/io/DetourWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/io/IOUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/io/MeshDataReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/io/MeshDataWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/io/MeshSetReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/io/MeshSetWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/io/NavMeshParamReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/io/NavMeshParamWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/io/NavMeshSetHeader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/io/NavMeshTileHeader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/AbstractDetourTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/FindDistanceToWallTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/FindLocalNeighbourhoodTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/FindNearestPolyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/FindPathTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/FindPolysAroundCircleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/FindPolysAroundShapeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/GetPolyWallSegmentsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/MoveAlongSurfaceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/NavMeshBuilderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/RandomPointTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/RecastTestMeshBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/SampleAreaModifications.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/TestDetourBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/TestTiledNavMeshBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/TiledFindPathTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/io/MeshDataReaderWriterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/io/MeshSetReaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/java/org/recast4j/detour/io/MeshSetReaderWriterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/resources/all_tiles_navmesh.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/resources/dungeon.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/resources/dungeon_all_tiles_navmesh.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/resources/dungeon_all_tiles_navmesh_32bit.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/src/test/resources/nav_test.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/BVNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/ClosestPointOnPolyResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/DefaultQueryFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/DetourBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/DetourCommon$IntersectResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/DetourCommon.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/FindDistanceToWallResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/FindLocalNeighbourhoodResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/FindNearestPolyResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/FindPolysAroundResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/FindRandomPointResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/GetPolyWallSegmentsResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/Link.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/MeshData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/MeshHeader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/MeshTile.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/MoveAlongSurfaceResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMesh.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshBuilder$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshBuilder$BVItem.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshBuilder$CompareItemX.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshBuilder$CompareItemY.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshBuilder$CompareItemZ.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshDataCreateParams.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshParams.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshQuery$FRand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshQuery$PortalResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshQuery$SegInterval.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshQuery.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/Node.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NodePool.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NodeQueue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/OffMeshConnection.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/Poly.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/PolyDetail.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/QueryData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/QueryFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/RaycastHit.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/Result.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/Status.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/StraightPathItem.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/Tupple2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/Tupple3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/VectorPtr.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/io/DetourWriter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/io/IOUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/io/MeshDataReader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/io/MeshDataWriter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/io/MeshSetReader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/io/MeshSetWriter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/io/NavMeshParamReader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/io/NavMeshParamWriter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/io/NavMeshSetHeader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/io/NavMeshTileHeader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/all_tiles_navmesh.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/dungeon.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/dungeon_all_tiles_navmesh.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/dungeon_all_tiles_navmesh_32bit.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/nav_test.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/AbstractDetourTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/FindDistanceToWallTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/FindLocalNeighbourhoodTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/FindNearestPolyTest$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/FindNearestPolyTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/FindPathTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/FindPolysAroundCircleTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/FindPolysAroundShapeTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/GetPolyWallSegmentsTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/MoveAlongSurfaceTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/NavMeshBuilderTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/RandomPointTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/RecastTestMeshBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/SampleAreaModifications.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/TestDetourBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/TestTiledNavMeshBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/TiledFindPathTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/io/MeshDataReaderWriterTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/io/MeshSetReaderTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detour/target/test-classes/org/recast4j/detour/io/MeshSetReaderWriterTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourcrowd/detour-crowd.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourcrowd/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourcrowd/src/main/java/org/recast4j/detour/crowd/Crowd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourcrowd/src/main/java/org/recast4j/detour/crowd/CrowdAgent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourcrowd/src/main/java/org/recast4j/detour/crowd/CrowdAgentAnimation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourcrowd/src/main/java/org/recast4j/detour/crowd/CrowdAgentParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourcrowd/src/main/java/org/recast4j/detour/crowd/LocalBoundary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourcrowd/src/main/java/org/recast4j/detour/crowd/ObstacleAvoidanceQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourcrowd/src/main/java/org/recast4j/detour/crowd/PathCorridor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourcrowd/src/main/java/org/recast4j/detour/crowd/PathQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourcrowd/src/main/java/org/recast4j/detour/crowd/PathQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourcrowd/src/main/java/org/recast4j/detour/crowd/ProximityGrid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourcrowd/src/main/java/org/recast4j/detour/crowd/SweepCircleCircleResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourcrowd/src/main/java/org/recast4j/detour/crowd/debug/CrowdAgentDebugInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourcrowd/src/main/java/org/recast4j/detour/crowd/debug/ObstacleAvoidanceDebugData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourcrowd/src/test/java/org/recast4j/detour/crowd/AbstractCrowdTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourcrowd/src/test/java/org/recast4j/detour/crowd/Crowd1Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourcrowd/src/test/java/org/recast4j/detour/crowd/Crowd4Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourcrowd/src/test/java/org/recast4j/detour/crowd/Crowd4VelocityTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/detour-tile-cache.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/AbstractTileLayersBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/CompressedTile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/ObstacleRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/ObstacleRequestAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/ObstacleState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/TileCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/TileCacheBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/TileCacheCompressor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/TileCacheContour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/TileCacheContourSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/TileCacheLayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/TileCacheLayerHeader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/TileCacheMeshProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/TileCacheObstacle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/TileCacheParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/TileCachePolyMesh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/TileCacheStorageParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/io/TileCacheLayerHeaderReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/io/TileCacheLayerHeaderWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/io/TileCacheReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/io/TileCacheSetHeader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/io/TileCacheWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/io/compress/FastLz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/io/compress/FastLzTileCacheCompressor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/io/compress/LZ4TileCacheCompressor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/main/java/org/recast4j/detour/tilecache/io/compress/TileCacheCompressorFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/test/java/org/recast4j/detour/tilecache/AbstractTileCacheTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/test/java/org/recast4j/detour/tilecache/SampleAreaModifications.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/test/java/org/recast4j/detour/tilecache/TempObstaclesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/test/java/org/recast4j/detour/tilecache/TestTileLayerBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/test/java/org/recast4j/detour/tilecache/TileCacheFindPathTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/test/java/org/recast4j/detour/tilecache/TileCacheNavigationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/test/java/org/recast4j/detour/tilecache/TileCacheTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/test/java/org/recast4j/detour/tilecache/io/TileCacheReaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/test/java/org/recast4j/detour/tilecache/io/TileCacheReaderWriterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/test/resources/all_tiles_tilecache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/detourtilecache/src/test/resources/dungeon_all_tiles_tilecache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parent.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_0_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__ch_qos_logback_logback_core_1_0_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_glfw_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_glfw_natives_linux_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_glfw_natives_macos_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_glfw_natives_windows_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_natives_linux_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_natives_macos_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_natives_windows_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_nuklear_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_nuklear_natives_linux_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_nuklear_natives_macos_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_nuklear_natives_windows_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_opengl_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_opengl_natives_linux_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_opengl_natives_macos_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_opengl_natives_windows_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_stb_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_stb_natives_linux_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_stb_natives_macos_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_stb_natives_windows_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_tinyfd_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_tinyfd_natives_linux_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_tinyfd_natives_macos_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_lwjgl_lwjgl_tinyfd_natives_windows_3_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_recast4j_detour_1_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_recast4j_detour_crowd_1_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_recast4j_recast_1_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/recast-demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/RecastDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/builder/AbstractNavMeshBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/builder/SampleAreaModifications.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/builder/SoloNavMeshBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/builder/TileNavMeshBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/draw/DebugDraw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/draw/DebugDrawPrimitives.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/draw/DrawMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/draw/GLCheckerTexture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/draw/GLU.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/draw/LegacyOpenGLDraw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/draw/ModernOpenGLDraw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/draw/NavMeshRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/draw/OpenGLDraw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/draw/OpenGLVertex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/draw/RecastDebugDraw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/geom/ChunkyTriMesh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/geom/DemoInputGeomProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/geom/DemoOffMeshConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/io/IOUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/io/ObjImporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/math/DemoMath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/sample/Sample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/settings/SettingsUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/tool/ConvexVolumeTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/tool/CrowdTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/tool/CrowdToolParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/tool/OffMeshConnectionTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/tool/PathUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/tool/TestNavmeshTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/tool/Tool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/tool/ToolUIModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/tool/ToolsUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/ui/Mouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/ui/MouseListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/ui/NuklearGL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/ui/NuklearUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/ui/NuklearUIHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/java/org/recast4j/demo/ui/NuklearUIModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/resources/dungeon.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/resources/fonts/DroidSans.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/src/main/resources/nav_test.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/dungeon.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/fonts/DroidSans.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/nav_test.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/RecastDemo$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/RecastDemo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/builder/AbstractNavMeshBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/builder/SampleAreaModifications.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/builder/SoloNavMeshBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/builder/TileNavMeshBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/draw/DebugDraw.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/draw/DebugDrawPrimitives.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/draw/DrawMode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/draw/GLCheckerTexture.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/draw/GLU.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/draw/LegacyOpenGLDraw$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/draw/LegacyOpenGLDraw.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/draw/ModernOpenGLDraw$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/draw/ModernOpenGLDraw.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/draw/NavMeshRenderer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/draw/OpenGLDraw.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/draw/OpenGLVertex.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/draw/RecastDebugDraw.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/geom/ChunkyTriMesh$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/geom/ChunkyTriMesh$BoundsItem.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/geom/ChunkyTriMesh$ChunkyTriMeshNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/geom/ChunkyTriMesh$CompareItemX.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/geom/ChunkyTriMesh$CompareItemY.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/geom/ChunkyTriMesh.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/geom/DemoInputGeomProvider.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/geom/DemoOffMeshConnection.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/io/IOUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/io/ObjImporter$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/io/ObjImporter$ObjImporterContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/io/ObjImporter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/math/DemoMath.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/sample/Sample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/settings/SettingsUI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/tool/ConvexVolumeTool.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/tool/CrowdTool$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/tool/CrowdTool$AgentTrail.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/tool/CrowdTool$ToolMode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/tool/CrowdTool.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/tool/CrowdToolParams.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/tool/OffMeshConnectionTool.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/tool/PathUtils$SteerTarget.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/tool/PathUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/tool/TestNavmeshTool$ToolMode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/tool/TestNavmeshTool.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/tool/Tool.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/tool/ToolUIModule.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/tool/ToolsUI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/ui/Mouse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/ui/MouseListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/ui/NuklearGL.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/ui/NuklearUI$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/ui/NuklearUI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/ui/NuklearUIHelper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast-demo/target/classes/org/recast4j/demo/ui/NuklearUIModule.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/recast.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/AreaModification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/CompactCell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/CompactHeightfield.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/CompactSpan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/Context.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/Contour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/ContourSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/ConvexVolume.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/Heightfield.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/HeightfieldLayerSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/InputGeomReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/PolyMesh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/PolyMeshDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/Recast.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/RecastArea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/RecastBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/RecastBuilderConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/RecastCommon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/RecastConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/RecastConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/RecastContour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/RecastFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/RecastLayers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/RecastMesh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/RecastMeshDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/RecastRasterization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/RecastRegion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/RecastVectors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/Span.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/geom/ChunkyTriMesh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/geom/InputGeomProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/geom/SimpleInputGeomProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/main/java/org/recast4j/recast/geom/TriMesh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/test/java/org/recast4j/recast/ObjImporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/test/java/org/recast4j/recast/RecastLayersTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/test/java/org/recast4j/recast/RecastSoloMeshTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/test/java/org/recast4j/recast/RecastTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/test/java/org/recast4j/recast/RecastTileMeshTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/test/java/org/recast4j/recast/SampleAreaModifications.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/test/resources/org/recast4j/recast/dungeon.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/src/test/resources/org/recast4j/recast/nav_test.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/AreaModification.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/CompactCell.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/CompactHeightfield.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/CompactSpan.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/Context.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/Contour.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/ContourSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/ConvexVolume.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/Heightfield.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/HeightfieldLayerSet$HeightfieldLayer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/HeightfieldLayerSet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/InputGeomReader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/PolyMesh.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/PolyMeshDetail.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/Recast.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastArea.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastBuilder$RecastBuilderProgressListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastBuilder$RecastBuilderResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastBuilderConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastCommon.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastConstants$PartitionType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastConstants.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastContour$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastContour$CompareDiagDist.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastContour$CompareHoles.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastContour$ContourHole.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastContour$ContourRegion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastContour$PotentialDiagonal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastContour.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastLayers$LayerRegion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastLayers.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastMesh$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastMesh$Edge.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastMesh.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastMeshDetail$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastMeshDetail$HeightPatch.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastMeshDetail.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastRasterization.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastRegion$Region.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastRegion$SweepSpan.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastRegion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/RecastVectors.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/Span.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/geom/ChunkyTriMesh$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/geom/ChunkyTriMesh$BoundsItem.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/geom/ChunkyTriMesh$ChunkyTriMeshNode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/geom/ChunkyTriMesh$CompareItemX.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/geom/ChunkyTriMesh$CompareItemY.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/geom/ChunkyTriMesh.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/geom/InputGeomProvider.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/geom/SimpleInputGeomProvider.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/classes/org/recast4j/recast/geom/TriMesh.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/test-classes/org/recast4j/recast/ObjImporter$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/test-classes/org/recast4j/recast/ObjImporter$ObjImporterContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/test-classes/org/recast4j/recast/ObjImporter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/test-classes/org/recast4j/recast/RecastLayersTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/test-classes/org/recast4j/recast/RecastSoloMeshTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/test-classes/org/recast4j/recast/RecastTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/test-classes/org/recast4j/recast/RecastTileMeshTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/test-classes/org/recast4j/recast/SampleAreaModifications.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/test-classes/org/recast4j/recast/dungeon.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recast/target/test-classes/org/recast4j/recast/nav_test.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/Link.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/MeshTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/MeshTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/NavMeshQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/NavMeshQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/OffMeshConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/OffMeshConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/Poly.java" beforeDir="false" afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/Poly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/QueryFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/detour/src/main/java/org/recast4j/detour/QueryFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/Link.class" beforeDir="false" afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/Link.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshQuery$PortalResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshQuery$PortalResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshQuery$SegInterval.class" beforeDir="false" afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshQuery$SegInterval.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/detour/target/classes/org/recast4j/detour/NavMeshQuery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recast-demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recast-demo/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -536,10 +48,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578323031714" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/recast-demo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="JUnit.FindPathTest.testFindPathStraight">
     <configuration name="FindPathTest.testFindPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -609,6 +121,8 @@
       <workItem from="1617105106582" duration="7441000" />
       <workItem from="1617196463444" duration="16596000" />
       <workItem from="1617283088139" duration="1647000" />
+      <workItem from="1617584424053" duration="1001000" />
+      <workItem from="1617585443933" duration="8934000" />
     </task>
     <task id="LOCAL-00001" summary="recast4j-study">
       <created>1617330572312</created>
@@ -636,45 +150,55 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="449" height="466" key="DebuggerActiveHint/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617109198878" />
-    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1617330333746">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1617584494746">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617584494746" />
     <state x="740" y="280" key="FileChooserDialogImpl/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617330333746" />
-    <state width="1877" height="351" key="GridCell.Tab.0.bottom" timestamp="1617283324899">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1860" height="344" key="GridCell.Tab.0.bottom" timestamp="1617588560092">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="344" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617588560092" />
     <state width="1877" height="351" key="GridCell.Tab.0.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617283324899" />
-    <state width="1877" height="351" key="GridCell.Tab.0.center" timestamp="1617283324899">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1860" height="344" key="GridCell.Tab.0.center" timestamp="1617588560092">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="344" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617588560092" />
     <state width="1877" height="351" key="GridCell.Tab.0.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617283324899" />
-    <state width="1877" height="351" key="GridCell.Tab.0.left" timestamp="1617283324898">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1860" height="344" key="GridCell.Tab.0.left" timestamp="1617588560092">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="344" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617588560092" />
     <state width="1877" height="351" key="GridCell.Tab.0.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617283324898" />
-    <state width="1877" height="351" key="GridCell.Tab.0.right" timestamp="1617283324899">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1860" height="344" key="GridCell.Tab.0.right" timestamp="1617588560092">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="344" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617588560092" />
     <state width="1877" height="351" key="GridCell.Tab.0.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617283324899" />
-    <state width="1877" height="351" key="GridCell.Tab.1.bottom" timestamp="1617283324899">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1860" height="344" key="GridCell.Tab.1.bottom" timestamp="1617588560092">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617588560092" />
     <state width="1877" height="351" key="GridCell.Tab.1.bottom/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617283324899" />
-    <state width="1877" height="351" key="GridCell.Tab.1.center" timestamp="1617283324899">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1860" height="344" key="GridCell.Tab.1.center" timestamp="1617588560092">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="344" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617588560092" />
     <state width="1877" height="351" key="GridCell.Tab.1.center/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617283324899" />
-    <state width="1877" height="351" key="GridCell.Tab.1.left" timestamp="1617283324899">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1860" height="344" key="GridCell.Tab.1.left" timestamp="1617588560092">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="344" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617588560092" />
     <state width="1877" height="351" key="GridCell.Tab.1.left/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617283324899" />
-    <state width="1877" height="351" key="GridCell.Tab.1.right" timestamp="1617283324899">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1860" height="344" key="GridCell.Tab.1.right" timestamp="1617588560092">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1860" height="344" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617588560092" />
     <state width="1877" height="351" key="GridCell.Tab.1.right/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617283324899" />
-    <state x="461" y="167" key="SettingsEditor" timestamp="1617282968345">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1617585428923">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1617585428923" />
     <state x="461" y="167" key="SettingsEditor/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617282968345" />
     <state x="681" y="270" width="540" height="524" key="StructurePopup" timestamp="1617249329853">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -684,15 +208,24 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="759" y="303" key="chooseDestDirectoryDialog/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617096949998" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1617265016977">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1617585447530">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617585447530" />
+    <state x="623" y="225" width="672" height="672" key="search.everywhere.popup" timestamp="1617611150211">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="672" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617611150211" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1617265016977" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="startRefs.length" />
+        <watch expression="estPoly.firstLink" />
+        <watch expression="bestPoly.firstLink" />
+        <watch expression="i = bestTile.links.get(i).next" />
+        <watch expression="bestTile.links" />
       </configuration>
     </watches-manager>
   </component>

@@ -56,6 +56,9 @@ import java.util.Random;
 
 import org.recast4j.detour.DetourCommon.IntersectResult;
 
+/**
+ * 导航网格查询，是所有客户端用来对导航网格执行寻路和相关查询的
+ */
 public class NavMeshQuery {
 
     /**
@@ -737,6 +740,7 @@ public class NavMeshQuery {
 
         Status status = Status.SUCCSESS;
 
+        //如果开放列表不为空
         while (!m_openList.isEmpty()) {
             // Remove node from open list and put it in closed list.
             Node bestNode = m_openList.pop();
@@ -774,7 +778,10 @@ public class NavMeshQuery {
                 parentPoly = tileAndPoly.second;
             }
 
+            //循环迭代bestTile的links列表，直到link没有链接到任何内容
             for (int i = bestPoly.firstLink; i != NavMesh.DT_NULL_LINK; i = bestTile.links.get(i).next) {
+
+                //领边索引
                 long neighbourRef = bestTile.links.get(i).ref;
 
                 // Skip invalid ids and do not expand back to where we came from.

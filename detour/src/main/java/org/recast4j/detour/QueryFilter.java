@@ -18,6 +18,9 @@ freely, subject to the following restrictions:
 */
 package org.recast4j.detour;
 
+/**
+ *查询过滤器
+ */
 public interface QueryFilter {
 
     boolean passFilter(long ref, MeshTile tile, Poly poly);
