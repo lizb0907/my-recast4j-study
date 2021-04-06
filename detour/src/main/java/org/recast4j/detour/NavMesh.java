@@ -78,8 +78,14 @@ public class NavMesh {
     private final MeshTile[] m_posLookup; /// < Tile hash lookup.
     MeshTile m_nextFree; /// < Freelist of tiles.
     private final MeshTile[] m_tiles; /// < List of tiles.
-    /** The maximum number of vertices per navigation polygon. */
+
+    /**
+     * The maximum number of vertices per navigation polygon
+     *
+     * 每个导航多边形最大顶点数
+     */
     private final int m_maxVertPerPoly;
+
     private int m_tileCount;
 
     /**

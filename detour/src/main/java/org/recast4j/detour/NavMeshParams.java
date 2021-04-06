@@ -22,17 +22,44 @@ package org.recast4j.detour;
  * Configuration parameters used to define multi-tile navigation meshes. The values are used to allocate space during
  * the initialization of a navigation mesh.
  *
+ * 定义多tile导航网格的配置参数
+ *
  * @see NavMesh
  */
 public class NavMeshParams {
-    /** The world space origin of the navigation mesh's tile space. [(x, y, z)] */
+
+    /**
+     * The world space origin of the navigation mesh's tile space. [(x, y, z)]
+     *
+     * tile导航网格世界空间起始点
+     */
     public final float[] orig = new float[3];
-    /** The width of each tile. (Along the x-axis.) */
+
+    /**
+     * The width of each tile. (Along the x-axis.)
+     *
+     * 每个tile的宽度
+     */
     public float tileWidth;
-    /** The height of each tile. (Along the z-axis.) */
+
+    /**
+     * The height of each tile. (Along the z-axis.)
+     *
+     * 每个tile的高度
+     */
     public float tileHeight;
-    /** The maximum number of tiles the navigation mesh can contain. */
+
+    /**
+     * The maximum number of tiles the navigation mesh can contain.
+     *
+     * 导航网格能够容纳的最大tile数量
+     */
     public int maxTiles;
-    /** The maximum number of polygons each tile can contain. */
+
+    /**
+     * The maximum number of polygons each tile can contain.
+     *
+     * 每个tile包含的多变形最大数量
+     */
     public int maxPolys;
 }
