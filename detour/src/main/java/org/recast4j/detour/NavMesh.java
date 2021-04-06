@@ -381,7 +381,7 @@ public class NavMesh {
         }
     }
 
-    /// Adds a tile to the navigation mesh.
+    /// Adds a tile to the navigation mesh.  在导航网格中添加一个tile
     /// @param[in] data Data for the new tile mesh. (See: #dtCreateNavMeshData)
     /// @param[in] dataSize Data size of the new tile mesh.
     /// @param[in] flags Tile flags. (See: #dtTileFlags)
