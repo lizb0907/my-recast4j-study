@@ -1850,7 +1850,7 @@ public class NavMeshQuery {
         // Handle off-mesh connections.
         if (fromPoly.getType() == Poly.DT_POLYTYPE_OFFMESH_CONNECTION) { //如果多边形为由两个顶点组成的非网格多边形
             // Find link that points to first vertex.
-            // 查找执向第一个顶点的逻辑
+            // 查找指向第一个顶点的逻辑
             for (int i = fromPoly.firstLink; i != NavMesh.DT_NULL_LINK; i = fromTile.links.get(i).next) {
                 if (fromTile.links.get(i).ref == to) {
                     int v = fromTile.links.get(i).edge;
