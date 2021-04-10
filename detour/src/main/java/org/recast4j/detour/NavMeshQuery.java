@@ -762,6 +762,7 @@ public class NavMeshQuery {
 
             // Get current poly and tile.
             // The API input has been cheked already, skip checking internal data.
+            // 获取当前的poly和tile, bestTile包含了betPoly
             long bestRef = bestNode.id;
             Tupple2<MeshTile, Poly> tileAndPoly = m_nav.getTileAndPolyByRefUnsafe(bestRef);
             MeshTile bestTile = tileAndPoly.first;
@@ -780,7 +781,7 @@ public class NavMeshQuery {
                 parentPoly = tileAndPoly.second;
             }
 
-            //循环迭代bestTile的links列表，直到link没有链接到任何内容
+            //迭代当前poly的所有邻边(poly的firstLink对应的是所在tile列表的索引)
             for (int i = bestPoly.firstLink; i != NavMesh.DT_NULL_LINK; i = bestTile.links.get(i).next) {
 
                 //领边索引
@@ -788,22 +789,28 @@ public class NavMeshQuery {
 
                 // Skip invalid ids and do not expand back to where we came from.
                 if (neighbourRef == 0 || neighbourRef == parentRef) {
+                    //邻边没有相邻索引或者邻居有父节点(表明已经访问过), 过滤
+                    //todo todo 待确定一般如果已经是在开放列表里即使有父节点也需要判断G值，是否更新父节点，不应该直接过滤。
+                    //todo todo 难道recast设置父节点策略不一样，有父节点后可以直接过滤?? 待确认?
                     continue;
                 }
 
                 // Get neighbour poly and tile.
                 // The API input has been cheked already, skip checking internal data.
+                // 获取邻居的tile和poly
                 tileAndPoly = m_nav.getTileAndPolyByRefUnsafe(neighbourRef);
                 MeshTile neighbourTile = tileAndPoly.first;
                 Poly neighbourPoly = tileAndPoly.second;
 
                 if (!filter.passFilter(neighbourRef, neighbourTile, neighbourPoly)) {
+                    //todo todo 这个过滤的是什么??
                     continue;
                 }
 
                 // deal explicitly with crossing tile boundaries
-                int crossSide = 0;
-                //如果是边界链接
+                //处理跨tile边界情况(ps:可以简单理解为跨区域)
+                int crossSide = 0;  //额外信息(默认为0)
+                //如果是跨tile边界的链接
                 if (bestTile.links.get(i).side != 0xff) {
                     //side >> 1 (相当于除以2)
                     crossSide = bestTile.links.get(i).side >> 1;
@@ -814,6 +821,7 @@ public class NavMeshQuery {
 
                 // If the node is visited the first time, calculate node position.
                 if (neighbourNode.flags == 0) {
+                    //如果是第一次访问该节点，请计算节点位置
                     Result<float[]> midpod = getEdgeMidPoint(bestRef, bestPoly, bestTile, neighbourRef, neighbourPoly,
                             neighbourTile);
                     if (!midpod.failed()) {
@@ -863,11 +871,11 @@ public class NavMeshQuery {
 
                 if ((neighbourNode.flags & Node.DT_NODE_OPEN) != 0) {
                     // Already in open, update node location.
-                    //todo 有疑问A*算法应该是根据g值是变好才更新开放列表，这里直接更新?
+                    //这里因为优先队列里传入了比较器，有自己的比较规则，所以直接更新队列
                     m_openList.modify(neighbourNode);  //已经在开放列表里，重新更新节点位置, 优先队列先移除再添加重新排序
                 } else {
                     // Put the node in open list.
-                    neighbourNode.flags |= Node.DT_NODE_OPEN;
+                    neighbourNode.flags |= Node.DT_NODE_OPEN;  //设置标识为在openList中
                     m_openList.push(neighbourNode);    //添加到开放列表
                 }
 
@@ -1805,12 +1813,29 @@ public class NavMeshQuery {
         return getPortalPoints(from, fromPoly, fromTile, to, toPoly, toTile, fromType, toType);
     }
 
-    // Returns portal points between two polygons.
+    /**
+     * Returns portal points between two polygons
+     *
+     * 返回两个多边形之间的入口点
+     *   (ps:也就是计算两个多边形link间的公共边的左右端点)
+     *
+     * @param from 当前多边形索引
+     * @param fromPoly
+     * @param fromTile
+     * @param to 邻边多边形索引
+     * @param toPoly
+     * @param toTile
+     * @param fromType
+     * @param toType
+     * @return
+     */
     protected Result<PortalResult> getPortalPoints(long from, Poly fromPoly, MeshTile fromTile, long to, Poly toPoly,
             MeshTile toTile, int fromType, int toType) {
         float[] left = new float[3];
         float[] right = new float[3];
+
         // Find the link that points to the 'to' polygon.
+        // 从from查找指向“to”多边形的链接
         Link link = null;
         for (int i = fromPoly.firstLink; i != NavMesh.DT_NULL_LINK; i = fromTile.links.get(i).next) {
             if (fromTile.links.get(i).ref == to) {
@@ -1823,8 +1848,9 @@ public class NavMeshQuery {
         }
 
         // Handle off-mesh connections.
-        if (fromPoly.getType() == Poly.DT_POLYTYPE_OFFMESH_CONNECTION) {
+        if (fromPoly.getType() == Poly.DT_POLYTYPE_OFFMESH_CONNECTION) { //如果多边形为由两个顶点组成的非网格多边形
             // Find link that points to first vertex.
+            // 查找执向第一个顶点的逻辑
             for (int i = fromPoly.firstLink; i != NavMesh.DT_NULL_LINK; i = fromTile.links.get(i).next) {
                 if (fromTile.links.get(i).ref == to) {
                     int v = fromTile.links.get(i).edge;
@@ -1885,6 +1911,16 @@ public class NavMeshQuery {
         return Result.success(mid);
     }
 
+    /**
+     * 得到相邻多边形之间公共边的中点
+     * @param from 当前多边形索引
+     * @param fromPoly
+     * @param fromTile
+     * @param to   邻边多边形索引
+     * @param toPoly
+     * @param toTile
+     * @return
+     */
     protected Result<float[]> getEdgeMidPoint(long from, Poly fromPoly, MeshTile fromTile, long to, Poly toPoly,
             MeshTile toTile) {
         Result<PortalResult> ppoints = getPortalPoints(from, fromPoly, fromTile, to, toPoly, toTile, 0, 0);

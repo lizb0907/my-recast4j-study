@@ -27,7 +27,16 @@ public class Node {
 
     public final int index;
 
-    /** Position of the node. */
+    /**
+     * Position of the node
+     *
+     * node的代表点位置信息
+     *
+     * 多边形寻路，计算距离的时候，是以代表点代替多边形的
+     *
+     * 例如:
+     *    相邻多边形之间公共边的中点
+     */
     public float[] pos = new float[3];
 
     /**
@@ -55,6 +64,8 @@ public class Node {
      * extra state information. A polyRef can have multiple nodes with different extra info. see DT_MAX_STATES_PER_NODE
      *
      * 额外状态信息。一个poly引用可以具有多个具有不同附加信息的节点
+     *
+     * 例如：当前节点是跨tile节点
      */
     int state;
 
