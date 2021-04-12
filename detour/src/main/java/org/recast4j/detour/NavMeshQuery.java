@@ -783,7 +783,7 @@ public class NavMeshQuery {
             //循环迭代bestTile的links列表，直到link没有链接到任何内容
             for (int i = bestPoly.firstLink; i != NavMesh.DT_NULL_LINK; i = bestTile.links.get(i).next) {
 
-                //领边索引
+                //邻边索引
                 long neighbourRef = bestTile.links.get(i).ref;
 
                 // Skip invalid ids and do not expand back to where we came from.
