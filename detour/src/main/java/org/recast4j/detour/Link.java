@@ -31,7 +31,7 @@ public class Link {
     /**
      * Neighbour reference. (The neighbor that is linked to.)
      *
-     * 相邻的索引
+     * 相邻多边形索引
      */
     public long ref;
 
@@ -39,6 +39,12 @@ public class Link {
      * Index of the next link
      *
      * 下一个链接索引
+     *
+     * <>
+     *     我的理解是:
+     *        1.当前poly的边与边有索引记录，相当于链表指引着下一个相连的边.
+     *        2.例如多边形为三角形, 3条表的关系通过next索引维护.
+     * </>
      */
     public int next;
 
@@ -52,7 +58,7 @@ public class Link {
     /**
      * If a boundary link, defines on which side the link is.
      *
-     * 如果是边界链接，定义链接在哪一侧
+     * 如果是跨tile边界链接，定义链接在哪一侧
      */
     int side;
 
