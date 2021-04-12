@@ -48,8 +48,15 @@ public class MeshHeader {
     public int userId;
     /** < The number of polygons in the tile. */
     public int polyCount;
-    /** < The number of vertices in the tile. */
+
+    /**
+     * The number of vertices in the tile
+     *
+     * tile中顶点数量
+     *
+     */
     public int vertCount;
+
     /** < The number of allocated links. */
     public int maxLinkCount;
     /** < The number of sub-meshes in the detail mesh. */

@@ -51,7 +51,7 @@ public class Link {
     /**
      * Index of the polygon edge that owns this link.
      *
-     * 拥有此链接的多边形边的索引
+     * 拥有此链接的多边形,边的索引
      */
     public int edge;
 

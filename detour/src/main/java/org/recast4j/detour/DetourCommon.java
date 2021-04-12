@@ -37,12 +37,22 @@ public class DetourCommon {
         return dest;
     }
 
-    /// Performs a linear interpolation between two vectors. (@p v1 toward @p
-    /// v2)
-    /// @param[out] dest The result vector. [(x, y, x)]
-    /// @param[in] v1 The starting vector.
-    /// @param[in] v2 The destination vector.
-    /// @param[in] t The interpolation factor. [Limits: 0 <= value <= 1.0]
+
+
+    /**
+     *  /// Performs a linear interpolation between two vectors. (@p v1 toward @p
+     *     /// v2)
+     *     /// @param[out] dest The result vector. [(x, y, x)]
+     *     /// @param[in] v1 The starting vector.
+     *     /// @param[in] v2 The destination vector.
+     *     /// @param[in] t The interpolation factor. [Limits: 0 <= value <= 1.0]
+     * 在两个向量之间执行线性插值
+     * @param verts
+     * @param v1
+     * @param v2
+     * @param t
+     * @return
+     */
     public static float[] vLerp(float[] verts, int v1, int v2, float t) {
         float[] dest = new float[3];
         dest[0] = verts[v1 + 0] + (verts[v2 + 0] - verts[v1 + 0]) * t;

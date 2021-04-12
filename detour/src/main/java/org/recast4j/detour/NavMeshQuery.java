@@ -831,10 +831,10 @@ public class NavMeshQuery {
 
                 // Calculate cost and heuristic.
                 float cost = 0;
-                float heuristic = 0;
+                float heuristic = 0;  //启发式
 
                 // Special case for last node.
-                if (neighbourRef == endRef) {
+                if (neighbourRef == endRef) { //如果是最后一个节点
                     // Cost
                     float curCost = filter.getCost(bestNode.pos, neighbourNode.pos, parentRef, parentTile, parentPoly,
                             bestRef, bestTile, bestPoly, neighbourRef, neighbourTile, neighbourPoly);
@@ -845,12 +845,15 @@ public class NavMeshQuery {
                     heuristic = 0;
                 } else {
                     // Cost
+                    //计算g值，当前多边行起点到邻边的中点
                     float curCost = filter.getCost(bestNode.pos, neighbourNode.pos, parentRef, parentTile, parentPoly,
                             bestRef, bestTile, bestPoly, neighbourRef, neighbourTile, neighbourPoly);
                     cost = bestNode.cost + curCost;
+                    //h值，邻边中点坐标到终点坐标距离 * 因子
                     heuristic = vDist(neighbourNode.pos, endPos) * H_SCALE;
                 }
 
+                //f值
                 float total = cost + heuristic;
 
                 // The node is already in open list and the new result is worse, skip.
@@ -1831,11 +1834,14 @@ public class NavMeshQuery {
      */
     protected Result<PortalResult> getPortalPoints(long from, Poly fromPoly, MeshTile fromTile, long to, Poly toPoly,
             MeshTile toTile, int fromType, int toType) {
+
+        //左端点坐标
         float[] left = new float[3];
+        //右端点坐标
         float[] right = new float[3];
 
         // Find the link that points to the 'to' polygon.
-        // 从from查找指向“to”多边形的链接
+        // 从from查找指向“to”多边形的链接(也就是公共边)
         Link link = null;
         for (int i = fromPoly.firstLink; i != NavMesh.DT_NULL_LINK; i = fromTile.links.get(i).next) {
             if (fromTile.links.get(i).ref == to) {
@@ -1848,12 +1854,17 @@ public class NavMeshQuery {
         }
 
         // Handle off-mesh connections.
-        if (fromPoly.getType() == Poly.DT_POLYTYPE_OFFMESH_CONNECTION) { //如果多边形为由两个顶点组成的非网格多边形
+        // 如果fromPoly多边形为由两个顶点组成的非网格多边形
+        if (fromPoly.getType() == Poly.DT_POLYTYPE_OFFMESH_CONNECTION) {
             // Find link that points to first vertex.
             // 查找指向第一个顶点的逻辑
             for (int i = fromPoly.firstLink; i != NavMesh.DT_NULL_LINK; i = fromTile.links.get(i).next) {
+                //相邻多边形索引等于to索引
                 if (fromTile.links.get(i).ref == to) {
+                    //从边信息拿到拥有该边的多边形顶点索引
                     int v = fromTile.links.get(i).edge;
+                    //fromTile.data.verts原顶点集数组，从fromPoly.verts[v] * 3索引开始, 赋值给left数组
+                    //todo todo 从fromPoly.verts[v] * 3开始，需要看数据结构生成的时候当时是如何存储？
                     System.arraycopy(fromTile.data.verts, fromPoly.verts[v] * 3, left, 0, 3);
                     System.arraycopy(fromTile.data.verts, fromPoly.verts[v] * 3, right, 0, 3);
                     return Result.success(new PortalResult(left, right, fromType, toType));
@@ -1862,9 +1873,11 @@ public class NavMeshQuery {
             return Result.invalidParam("Invalid offmesh from connection");
         }
 
+        // 如果toPoly多边形为由两个顶点组成的非网格多边形
         if (toPoly.getType() == Poly.DT_POLYTYPE_OFFMESH_CONNECTION) {
             for (int i = toPoly.firstLink; i != NavMesh.DT_NULL_LINK; i = toTile.links.get(i).next) {
                 if (toTile.links.get(i).ref == from) {
+                    //从边信息拿到拥有该边的多边形顶点索引
                     int v = toTile.links.get(i).edge;
                     System.arraycopy(toTile.data.verts, toPoly.verts[v] * 3, left, 0, 3);
                     System.arraycopy(toTile.data.verts, toPoly.verts[v] * 3, right, 0, 3);
@@ -1874,15 +1887,17 @@ public class NavMeshQuery {
             return Result.invalidParam("Invalid offmesh to connection");
         }
 
-        // Find portal vertices.
+        // Find portal vertices. todo 需要看数据结构生成的时候当时是如何存储？
         int v0 = fromPoly.verts[link.edge];
         int v1 = fromPoly.verts[(link.edge + 1) % fromPoly.vertCount];
+        //左端点
         System.arraycopy(fromTile.data.verts, v0 * 3, left, 0, 3);
+        //右端点
         System.arraycopy(fromTile.data.verts, v1 * 3, right, 0, 3);
 
         // If the link is at tile boundary, dtClamp the vertices to
         // the link width.
-        if (link.side != 0xff) {
+        if (link.side != 0xff) {  //todo todo 跨tile处理,这是干吗的？
             // Unpack portal limits.
             if (link.bmin != 0 || link.bmax != 255) {
                 float s = 1.0f / 255.0f;
@@ -1930,6 +1945,7 @@ public class NavMeshQuery {
         float[] left = ppoints.result.left;
         float[] right = ppoints.result.right;
         float[] mid = new float[3];
+        //取中点
         mid[0] = (left[0] + right[0]) * 0.5f;
         mid[1] = (left[1] + right[1]) * 0.5f;
         mid[2] = (left[2] + right[2]) * 0.5f;

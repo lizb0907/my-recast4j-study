@@ -445,7 +445,7 @@ public class NavMeshBuilder {
         header.offMeshConCount = storedOffMeshConCount;
         header.bvNodeCount = bvTreeSize;
 
-        int offMeshVertsBase = params.vertCount;
+        int offMeshVertsBase = params.vertCount; //多边形顶点数量
         int offMeshPolyBase = params.polyCount;
 
         // Store vertices
