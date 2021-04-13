@@ -50,6 +50,8 @@ public class Node {
      *
      * ps:路径经过这个Node到终点需要花费的总开销，为cost+启发距离
      *    也就是F值 (f = g + h)
+     *
+     * 有时候也为H*H_SCALE值，非常迷!
      */
     float total;
 

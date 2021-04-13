@@ -705,6 +705,20 @@ public class NavMeshQuery {
      * @param filter
      *            The polygon filter to apply to the query.
      * @return Found path
+     *
+     * 1. 把起点加入 open list 。
+     *    * 2. 重复如下过程：
+     *    * 		a.  遍历 open list ，查找 F 值最小的节点，把它作为当前要处理的节点。
+     *    * 		b.  把这个节点移到 close list 。
+     *    * 		c.  对当前方格的 8 个相邻方格的每一个方格？
+     *    * 			◆     如果它是不可抵达的或者它在 close list 中，忽略它。否则，做如下操作。
+     *    * 			◆     如果它不在 open list 中，把它加入 open list ，并且把当前方格设置为它的父亲，记录该方格的 F ， G 和 H 值。
+     *    * 			◆     如果它已经在 open list 中，检查这条路径 (即经由当前方格到达它那里) 是否更好，用G值作参考。更小的 G 值表示这是更好的路径。
+     *    * 		 	       如果是这样，把它的父亲设置为当前方格，并重新计算它的 G 和 F 值。如果你的 open list 是按 F 值排序的话，改变后你可能需要重新排序。
+     *    * 		d.  停止，当你：
+     *    * 			◆     把终点加入到了 open list 中，此时路径已经找到了，或者
+     *    * 			◆     查找终点失败，并且 open list 是空的，此时没有路径。
+     *    * 3. 保存路径。从终点开始，每个方格沿着父节点移动直至起点，这就是你的路径。
      */
     public Result<List<Long>> findPath(long startRef, long endRef, float[] startPos, float[] endPos,
             QueryFilter filter) {
@@ -730,6 +744,7 @@ public class NavMeshQuery {
 
         //A*算法中的开销公式为：F = G + H*H_SCALE，其中H_SCALE为启发因子，
         // 用于控制启发距离的影响程度，可在编辑器中设置，默认为0.999。如果把H_SCALE设为0，则A*退化为了Dijkstra算法。
+        //注意这里的total居然是H*H_SCALE值，代码写的有点迷!
         startNode.total = vDist(startPos, endPos) * H_SCALE;
 
         startNode.id = startRef;
@@ -738,6 +753,8 @@ public class NavMeshQuery {
         m_openList.push(startNode);
 
         Node lastBestNode = startNode;
+
+        //这里居然相当于h值!
         float lastBestNodeCost = startNode.total;
 
         Status status = Status.SUCCSESS;
@@ -789,9 +806,8 @@ public class NavMeshQuery {
 
                 // Skip invalid ids and do not expand back to where we came from.
                 if (neighbourRef == 0 || neighbourRef == parentRef) {
-                    //邻边没有相邻索引或者邻居有父节点(表明已经访问过), 过滤
-                    //todo todo 待确定一般如果已经是在开放列表里即使有父节点也需要判断G值，是否更新父节点，不应该直接过滤。
-                    //todo todo 难道recast设置父节点策略不一样，有父节点后可以直接过滤?? 待确认?
+                    //邻边没有相邻索引或者邻居的父节点索引就是当前节点的父节点，则过滤
+                    //todo todo 需要再考虑邻居的父节点索引就是当前节点的父节点，则过滤
                     continue;
                 }
 
@@ -856,6 +872,7 @@ public class NavMeshQuery {
                 //f值
                 float total = cost + heuristic;
 
+                //这里比的是总值，其实和比较G值一样，因为H值是固定不变的，所以比较G值或比较总值(F)其实一个道理。
                 // The node is already in open list and the new result is worse, skip.
                 if ((neighbourNode.flags & Node.DT_NODE_OPEN) != 0 && total >= neighbourNode.total) {
                     continue;
@@ -865,6 +882,7 @@ public class NavMeshQuery {
                     continue;
                 }
 
+                //f值更小说明路径更好，需要更新父亲节点g值和f值
                 // Add or update the node.
                 neighbourNode.pidx = m_nodePool.getNodeIdx(bestNode);   //设置父亲节点
                 neighbourNode.id = neighbourRef;
@@ -872,19 +890,22 @@ public class NavMeshQuery {
                 neighbourNode.cost = cost; //g值
                 neighbourNode.total = total; //总的花费代价(f值)
 
+                //已经在开放列表里，重新排序
                 if ((neighbourNode.flags & Node.DT_NODE_OPEN) != 0) {
                     // Already in open, update node location.
                     //这里因为优先队列里传入了比较器，有自己的比较规则，所以直接更新队列
                     m_openList.modify(neighbourNode);  //已经在开放列表里，重新更新节点位置, 优先队列先移除再添加重新排序
                 } else {
+                    //不在开放列表里，直接添加底层优先队列保证了最小元素在堆顶
                     // Put the node in open list.
                     neighbourNode.flags |= Node.DT_NODE_OPEN;  //设置标识为在openList中
                     m_openList.push(neighbourNode);    //添加到开放列表
                 }
 
                 // Update nearest node to target so far.
-                // 将最近的节点更新为目标
+                // 到目前为止，将最近的节点更新为目标
                 if (heuristic < lastBestNodeCost) {
+                    //这里比较的是H*H_SCALE
                     lastBestNodeCost = heuristic;
                     lastBestNode = neighbourNode;
                 }
