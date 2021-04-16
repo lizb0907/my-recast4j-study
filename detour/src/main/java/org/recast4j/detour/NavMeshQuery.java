@@ -706,6 +706,7 @@ public class NavMeshQuery {
      *            The polygon filter to apply to the query.
      * @return Found path
      *
+     * //传统的方格A*算法：
      * 1. 把起点加入 open list 。
      *    * 2. 重复如下过程：
      *    * 		a.  遍历 open list ，查找 F 值最小的节点，把它作为当前要处理的节点。
@@ -813,7 +814,7 @@ public class NavMeshQuery {
 
                 // Get neighbour poly and tile.
                 // The API input has been cheked already, skip checking internal data.
-                // 获取邻居的tile和poly
+                // 获取相邻的tile和poly
                 tileAndPoly = m_nav.getTileAndPolyByRefUnsafe(neighbourRef);
                 MeshTile neighbourTile = tileAndPoly.first;
                 Poly neighbourPoly = tileAndPoly.second;
@@ -861,11 +862,12 @@ public class NavMeshQuery {
                     heuristic = 0;
                 } else {
                     // Cost
-                    //计算g值，当前多边行起点到邻边的中点
+                    //curCost当前多边行到邻边的中点值
                     float curCost = filter.getCost(bestNode.pos, neighbourNode.pos, parentRef, parentTile, parentPoly,
                             bestRef, bestTile, bestPoly, neighbourRef, neighbourTile, neighbourPoly);
+                    //从起点到当前的代价(也就是G值)
                     cost = bestNode.cost + curCost;
-                    //h值，邻边中点坐标到终点坐标距离 * 因子
+                    //h值，邻节点位置到终点
                     heuristic = vDist(neighbourNode.pos, endPos) * H_SCALE;
                 }
 
@@ -873,6 +875,7 @@ public class NavMeshQuery {
                 float total = cost + heuristic;
 
                 //这里比的是总值，其实和比较G值一样，因为H值是固定不变的，所以比较G值或比较总值(F)其实一个道理。
+                //已经在开放列表里，并且F值代价更大，过滤
                 // The node is already in open list and the new result is worse, skip.
                 if ((neighbourNode.flags & Node.DT_NODE_OPEN) != 0 && total >= neighbourNode.total) {
                     continue;
@@ -912,6 +915,7 @@ public class NavMeshQuery {
             }
         }
 
+        //回溯父节点获取路径
         List<Long> path = getPathToNode(lastBestNode);
 
         if (lastBestNode.id != endRef) {

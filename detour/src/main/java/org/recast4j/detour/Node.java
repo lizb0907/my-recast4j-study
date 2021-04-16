@@ -36,6 +36,9 @@ public class Node {
      *
      * 例如:
      *    相邻多边形之间公共边的中点，或是起始点
+     *
+     *  也就表明 recast的A*寻路在没有经过漏斗算法做平滑处理前，
+     *       从起点开始接着都是经过相邻多边形中点
      */
     public float[] pos = new float[3];
 
